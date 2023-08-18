@@ -1,0 +1,27 @@
+
+.flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px;
+}
+.flex {
+	width: 400px;
+	height: 300px;
+	margin: 0;
+	padding: 7px 7px;
+	transition: all 0.5s;
+}
+
+.flex:hover {
+	transform: scale(2);
+}
+
+
+.description {
+	font-family: "Josefin Sans";
+	color: gray;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 20px;
+}
