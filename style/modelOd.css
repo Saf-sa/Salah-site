@@ -86,30 +86,83 @@ header {
   color: #8e909b;
 }
 
-.flexbox {
+.column img {
+  margin: 0;
+}
+
+h2 {
+  display: inline-flexbox;
+  text-align: center;
+}
+
+h1:hover {
+  color: rgb(47, 155, 171);
+}
+
+.nav-photo {
+  visibility: visible;
+  width: 100%;
+}
+.nav-photo ul {
+  visibility: visible;
+  display: flex;
+  padding-left: auto;
+}
+.nav-photo li {
+  visibility: visible;
+  font-size: large;
+  color: black;
+  display: flex;
+  margin: auto; /*  */
+}
+.gallery-hide {
+  visibility: hidden;
+}
+.titre-h2 {
+  font-size: 1.3rem;
+}
+.gallery-back {
+  text-decoration: none;
+  color: black;
+}
+.gallery-back:hover {
+  font-size: inherit;
+  color: rgb(47, 155, 171);
+}
+
+main {
+  margin: auto;
+  width: 60%;
+  margin-top: 100px;
+}
+.row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 130px;
-}
-.flex {
-  width: 300px;
-  height: 200px;
-  margin: 0;
-  padding: 7px 7px;
-  transition: all 0.8s;
+  padding: 1px;
 }
 
-.flex:hover {
-  transform: scale(1.5);
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
 }
 
-.description {
-  color: gray;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  font-size: 20px;
+.column img {
+  width: 100%;
+  height: auto;
 }
+
+.column img {
+  width: 100%;
+  filter: grayscale(1) brightness(0.9);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.column img:hover {
+  filter: grayscale(0);
+}
+
 footer {
   margin-top: 150px;
   font-size: 0.9rem;
@@ -161,3 +214,69 @@ footer {
     background-color: transparent;
   }
 }
+
+/* 
+@media screen and (max-width: 320px){
+header{ 
+  margin-bottom: 100px;
+
+}
+  main .container{
+    margin-left: 100px;
+    padding-left: 5rem;
+  }
+  .column {
+    flex: 100%;
+    max-width: 50%;
+  }
+  .column img {
+    filter: grayscale(1) brightness(0);
+    transform:scale(2.5); 
+  }
+
+   
+  main{
+    margin: auto;
+    width: 70%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    } 
+h1{
+  font-size: 2rem;
+
+
+}
+h2{
+  font-size: 0.5rem;
+}
+ 
+*/
+/* @media screen and (max-width: 350px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .titre-h2 {
+    font-size: 0.7rem;
+  }
+} */
+
+/* @media screen and (max-width: 650px) {
+}
+@media screen and (max-width: 850px) {
+  .titre-h2 {
+    font-size: 0.8rem;
+  }
+  h1 {
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 2.4rem;
+  }
+  h1 a:hover {
+    color: rgb(47, 155, 171);
+    font-size: 2.5rem;
+  }
+  .gallery-back {
+    font-size: 1rem;
+  }
+}
+ */
