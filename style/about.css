@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap");
 body {
+
     box-sizing: border-box;
     margin: 0;  
     background-color: white;
@@ -28,11 +29,10 @@ body {
      margin: auto;
      width: 70%;
      right: 10px;
-     padding: 15px;
+     padding: 17px;
      position: static;
      color: rgb(3, 3, 3);
      font-size: 19px;
-     font-family: Poppins;
      text-decoration: none;
      text-align: center;
     }
@@ -67,6 +67,10 @@ body {
    
     
     }
+   .nav-menu{
+    background-color: transparent;
+      
+    }
     
     .rc_nav a:hover {
       font-size: 0,7rem;
@@ -90,22 +94,22 @@ body {
     .rc_content {
       text-align: center; 
       padding-left:14px; 
-      font-family: Poppins; 
+  
       margin-top: 20px;  
       color: #8e909b;
 
       
     }
-    .container{
- 
-      margin: 0 auto;
-        width: 50%;
-        
+    .title{
+    padding-top: 5px;
+     
       }
       .photo{
         width: fit-content;
         margin: auto;
-        padding-top: 10px;
+        padding-bottom: 30px;
+        
+
       
       }
       .photo img{
@@ -113,11 +117,12 @@ body {
         border-radius: 50%;
         box-shadow: 0 0 10px #646060;
         width: 200px;
+       
         
       }
       h2{
         text-align: center;
-        margin-top: 130px;
+        margin-top: 90px;
         font-size: 2.5rem;
         color: black;
       }
@@ -152,13 +157,12 @@ body {
         top: 0px;
         
       }
-   
+     
     }
     
     @media screen and (max-width: 700px) {
       .rc_nav.responsive {position: relative; top: 10px;}
       .rc_nav.responsive .icon {
-        background-color: transparent;
 
         position: fixed;
         left: 0;
@@ -170,9 +174,19 @@ body {
         text-align: left;
         font-size: 12px;
       }
-     header{
-      background-color: transparent;
-
-     }
-    
+      header {
+        background-color: transparent;
+      }
+      h2{
+        text-align: center;
+        margin-top: 150px;
+        font-size: 1.4rem;
+        color: black;
+      }
+      
+      .nav-menu{
+        background-color: transparent;
+          width: 40px;
+        }
+      
     }
